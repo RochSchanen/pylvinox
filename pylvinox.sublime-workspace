@@ -1,0 +1,639 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Get",
+				"GetSize"
+			],
+			[
+				"Se",
+				"SetSize"
+			],
+			[
+				"Set",
+				"SetSize"
+			],
+			[
+				"G",
+				"GetSize"
+			],
+			[
+				"bi",
+				"Bitmap"
+			],
+			[
+				"SetB",
+				"SetBackground"
+			],
+			[
+				"im",
+				"imageSelect"
+			],
+			[
+				"B",
+				"BackgroundBitmap"
+			],
+			[
+				"Dre",
+				"DrawAllDecorations"
+			],
+			[
+				"ima",
+				"imageSelect"
+			],
+			[
+				"imag",
+				"imageCollect"
+			],
+			[
+				"up",
+				"updateSwitch"
+			],
+			[
+				"upd",
+				"updateWheel"
+			],
+			[
+				"wh",
+				"Wheel"
+			],
+			[
+				"pr",
+				"PushRelease"
+			],
+			[
+				"se",
+				"SendEvent"
+			],
+			[
+				"Pa",
+				"Panel"
+			],
+			[
+				"time",
+				"timer_update"
+			],
+			[
+				"k",
+				"Keys"
+			],
+			[
+				"tim",
+				"timer_update"
+			],
+			[
+				"EV",
+				"EVT_TIMER"
+			],
+			[
+				"par",
+				"parseText"
+			],
+			[
+				"ret",
+				"returnEOLC"
+			],
+			[
+				"pa",
+				"parseEndOfLine"
+			],
+			[
+				"M",
+				"MM"
+			],
+			[
+				"d",
+				"dbs"
+			],
+			[
+				"getI",
+				"getId"
+			],
+			[
+				"get",
+				"getMemoryExplicit"
+			],
+			[
+				"C",
+				"CFG"
+			],
+			[
+				"_",
+				"_parseFail"
+			],
+			[
+				"PA",
+				"PARSELINE"
+			],
+			[
+				"op",
+				"optD"
+			],
+			[
+				"en",
+				"engine__001"
+			],
+			[
+				"pars",
+				"parsetext"
+			],
+			[
+				"MA",
+				"MASK_SIGN"
+			],
+			[
+				"upda",
+				"updateZN"
+			],
+			[
+				"MAS",
+				"MASK_CARRY"
+			],
+			[
+				"MASK_",
+				"MASK_CLR"
+			],
+			[
+				"getAc",
+				"getAccu"
+			],
+			[
+				"opNO",
+				"opNOT"
+			],
+			[
+				"opna",
+				"opname"
+			],
+			[
+				"opA",
+				"opAND"
+			],
+			[
+				"getAddress",
+				"getAddressOffset"
+			],
+			[
+				"getAdd",
+				"getAddressArgument"
+			],
+			[
+				"getR",
+				"getRegister"
+			],
+			[
+				"opJ",
+				"opJMP"
+			],
+			[
+				"opN",
+				"opNOP"
+			],
+			[
+				"getre",
+				"getReference"
+			],
+			[
+				"_F",
+				"_FT"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "pylvinox.py",
+			"settings":
+			{
+				"buffer_size": 277,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "pylvinox-snapshot-20220907.py",
+			"settings":
+			{
+				"buffer_size": 10967,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/my_build.sublime-build",
+					""
+				],
+				[
+					"Packages/User/python.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 185.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/schanen/Documents/GitHub/pylvinox",
+		"/C/Users/schanen/Documents/GitHub/pylvinox/local",
+		"/C/Users/schanen/Documents/GitHub/pylvinox/resources"
+	],
+	"file_history":
+	[
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/resources/borders.png.txt",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/theme.py",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/.gitignore",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/layout.py",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/buttons.py",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/timer.py",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/display.py",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/base.py",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/local/t1.py",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/tools.py",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/local/log20200927.txt",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/resources/generator.png.txt",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/resources/switches.png.txt",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/resources/push.png.txt",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/resources/push.png",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/local/snipets.py",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/resources/Panels.png.txt",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/resources/Panel512.png.txt",
+		"/C/Users/schanen/Documents/DropBox Cleanup/CoilWinder/Arduino/Sketch20180605-main/Sketch20180605-main.ino",
+		"/G/BACKUP_20200208/pBackups/DropBox Cleanup/CoilWinder/Arduino/libraries/SD/keywords.txt",
+		"/G/BACKUP_20200208/pBackups/DropBox Cleanup/CoilWinder/Arduino/libraries/PushButton/PushButton.h",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/controls.py",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/setup.py",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/pyvigi/__init__.py",
+		"/C/Program Files/Microchip/xc8/v2.40/avr/avr/include/avr/portpins.h",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/local/t.py",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/t.py",
+		"/C/Users/schanen/Documents/GitHub/pyvigi_dev/log.txt",
+		"/H/My Documents/PIC programing/examples.txt",
+		"/H/My Documents/Project FPGA/Project FPGA General Notes.txt",
+		"/H/My Documents/Work Python Interface/testmx.py",
+		"/H/My Documents/xvico/D25-Adaptor-Block.stp",
+		"/H/My Documents/xvico/D25-adaptor.stp",
+		"/H/My Documents/Work Drawings Fridge 6/D25-malePin.ipt",
+		"/H/My Documents/Admin/Linking/20220804.txt",
+		"/H/My Documents/Admin/Linking/20220802.txt",
+		"/H/My Documents/Admin/Linking/20220803.txt",
+		"/F/bookmarks-2022-07-22.json",
+		"/C/Users/schanen/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/9AX64MHQ/Withdrawal Form",
+		"/H/My Documents/Work Vibrating Wire/help/help - Pure He.pdf",
+		"/H/My Documents/Work Torsional Oscillator/torsional oscillator.txt",
+		"/H/My Documents/Python/prjs/torsion_oscillator_calibration.py",
+		"/E/recycle/dwelper/20220726/20220726.txt",
+		"/H/My Documents/Python/prjs/backup/edit/pytest1214.py",
+		"/H/My Documents/Python/prjs/backup/lorenz/fitdisplay.py",
+		"/H/My Documents/Python/prjs/multiplatform.txt",
+		"/H/My Documents/Python/prjs/20220524-python-taskmanager/doit.py",
+		"/H/My Documents/Python/prjs/20220524-python-taskmanager/20220524T131800.task",
+		"/F/work torsion oscillator python/torsion_oscillator_calibration.py",
+		"/F/work torsion oscillator python/torsion_oscillator_gap.py",
+		"/H/My Documents/Python/prjs/torsion_oscillator_gap.py",
+		"/E/platform/leisure/Westworld - S01E01.txt",
+		"/E/platform/leisure/Westworld - S01E02.txt",
+		"/H/My Documents/Python/capacitance/loop.py",
+		"/H/My Documents/torsional oscillator.txt",
+		"/C/Users/schanen/Downloads/Move/Trueform_Series_Operating_and_Service_Guide_en.chm.txt",
+		"/H/My Documents/Python/capacitance/display.py",
+		"/C/Users/schanen/Dropbox/Torsional Oscillator/Torsional Oscillator paper/torsionalOscillatorDraft5.tex",
+		"/H/My Documents/python/compiler/parselib11.py",
+		"/H/My Documents/python/compiler/engine__001.py",
+		"/H/My Documents/python/compiler/parseNumerics.py",
+		"/H/My Documents/python/compiler/parser.py",
+		"/H/My Documents/python/compiler/toolbox.py",
+		"/H/My Documents/python/compiler/notes.txt",
+		"/H/My Documents/python/compiler/engine_001_run.py",
+		"/H/My Documents/python/compiler/t.py",
+		"/H/My Documents/python/compiler/engine.log",
+		"/H/My Documents/python/compiler/quick.py",
+		"/H/My Documents/python/compiler/engine.cfg",
+		"/?luna.lancs.ac.uk/FST/PY/Milikelvin/Hello.txt",
+		"/G/BACKUP_My Passport BLACK_20200518/Roch Schanen/Admin/Computer/AdminNotes.txt",
+		"/F/users/RochSchanen/0. admin/Computer/accounts/ultra librarian.txt",
+		"/C/Users/schanen/Dropbox/notesToBeSorted/everything.txt",
+		"/C/Users/schanen/Dropbox/todo/PourDedeEtChantalEtCecile.txt",
+		"/C/Users/schanen/Dropbox/tempToBeSorted/test.m",
+		"/C/Users/schanen/Dropbox/tempToBeSorted/Magnet.dat",
+		"/C/Users/schanen/Dropbox/tempToBeSorted/ipv4.txt",
+		"/C/Users/schanen/Dropbox/tempToBeSorted/install WSL on windows",
+		"/C/Users/schanen/Dropbox/tempToBeSorted/calculator.py",
+		"/C/Users/schanen/Dropbox/tempToBeSorted/192.168.1.219",
+		"/?luna.lancs.ac.uk/FST/PY/Milikelvin/fridge_6/PLM4/calculator.py",
+		"/C/Users/schanen/OneDrive - Lancaster University/brickworks/LogicCircuit/FromBackup-1/ALU.Controls.txt",
+		"/home/roch/Documents/admin/NathanDrive/furnitures/vodaphonewifi.txt",
+		"/home/roch/Documents/python/compiler/engine.py",
+		"/home/roch/Documents/python/compiler/toolbox.py",
+		"/home/roch/dwhelper/2021/marks.txt",
+		"/home/roch/dwhelper/2021/LauraTeen AKA Laura Palmer AKA Petra Sexton/references.txt",
+		"/home/roch/Documents/python/compiler/quick.py",
+		"/home/roch/Documents/python/compiler/grammar.txt",
+		"/home/roch/Documents/python/compiler/t.txt",
+		"/home/roch/Documents/python/compiler/engine_001.py",
+		"/home/roch/Documents/python/compiler/engine__001.py",
+		"/home/roch/Documents/python/compiler/test.py",
+		"/home/roch/Documents/python/compiler/parserModule.py",
+		"/home/roch/Documents/python/compiler/parserModuleNoComment.py",
+		"/home/roch/Documents/python/displayMonitorSize.py",
+		"/home/roch/Documents/admin/home/furnitures/vodaphonewifi.txt",
+		"/E/Platform/Work/programing/compiler/assembler/a.asm",
+		"/E/Platform/Work/programing/compiler/assembler/a.asmlog",
+		"/E/Platform/Work/programing/compiler/assembler/assembler.py",
+		"/E/Platform/Work/programing/20211012T172832.asmlog",
+		"/E/Platform/Work/programing/20211012T172913.asmlog",
+		"/E/Platform/Work/programing/a.asm",
+		"/C/Users/schanen/AppData/Roaming/Sublime Text 3/Packages/User/my_build.sublime-build",
+		"/C/Users/schanen/AppData/Roaming/Sublime Text 3/Packages/User/VHDL.sublime-settings",
+		"/C/Users/schanen/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/schanen/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/E/Platform/Work/programing/SimpleCompiler/SimpleCompiler.py",
+		"/E/Platform/Work/programing/QRcode/helloCode.py",
+		"/E/Platform/Work/programing/SimpleCompiler/prgfile.txt",
+		"/C/Users/schanen/Desktop/Sticky notes saved.txt",
+		"/E/Platform/Admin/Computer/Installations/installation.txt",
+		"/J/urgent-todo-towatch.txt",
+		"/J/notes20191016.txt",
+		"/J/hello.py",
+		"/J/SimpleCompiler/SimpleCompiler.py",
+		"/J/Programming/VHDL/vhdlprj000_vhd_00.vhd",
+		"/E/Platform/Admin/Computer/Installations/Sublime Text 3/checkversion.py",
+		"/E/Platform/Admin/Computer/Installations/Sublime Text 3/Notes.txt",
+		"/I/Sticky notes saved.txt",
+		"/E/Platform/Admin/Computer/Installations/Firefox/Notes.txt",
+		"/E/Platform/Admin/Computer/Installations/Python 3.7.5/Notes.txt",
+		"/E/Platform/Admin/Computer/Installations/Python 3.7.5/New Text Document.txt",
+		"/E/Platform/Admin/Computer/Installations/Python 3.8/Notes.txt",
+		"/E/Platform/Admin/Computer/Installations/Python 3/Notes.txt",
+		"/E/Platform/Admin/Computer/Installations/Dropbox/Notes.txt"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "pylvinox.py",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								277,
+								277
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "pylvinox-snapshot-20220907.py",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 10967,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.482043343653,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 219.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pylvinox.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 305.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
