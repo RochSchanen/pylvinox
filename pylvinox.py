@@ -26,6 +26,7 @@ from pyvigi.buttons import LEDSwitch
 from pyvigi.buttons import Wheel
 
 from pyvigi.display import bitmapControl
+from pyvigi.display import digitalFixedPointDisplay
 
 class myapp(app):
 
@@ -36,7 +37,7 @@ class myapp(app):
         # the vScroll control and not on the Panel
         self.content = vScroll(self.Panel)
         self.content.SetBackground(imageCollect("drawing"))
-        self.content.SetFrameContainerHeight(950)
+        self.content.SetFrameContainerHeight(750)
 
         # ------------------------------------------------------
 
@@ -117,16 +118,16 @@ class myapp(app):
             # register
             self.switches[name] = s
 
-        # ------------------------------------------------------
+        ###################################################### POT NEEDLE VALVE
 
         digitsc = imageCollect("digits", "yellow") 
 
         # create Needle valve interface
-        self.NV = {}
+        self.PNV = {}
         # add interface element: name
-        self.NV["Name"] = "NV"
+        self.PNV["Name"] = "NV"
         # add interface element: wheels
-        self.NV["Wheels"] = []
+        self.PNV["Wheels"] = []
         for n, x, y in [
                 (100,  0+81, 217),
                 (10,  12+81, 217),
@@ -137,26 +138,26 @@ class myapp(app):
                 imageSelect(digitsc, "normal"),
                 imageSelect(digitsc,  "hover"))
             w.SetPosition((x, y))
-            w.BindEvent(self.NVOperate)
+            w.BindEvent(self.PNVOperate)
             w.weight = n
-            w.group = self.NV
-            self.NV["Wheels"].append(w)
+            w.group = self.PNV
+            self.PNV["Wheels"].append(w)
         # add interface element: value
         v = 0
-        for w in self.NV["Wheels"]:
+        for w in self.PNV["Wheels"]:
             v += w.weight * w.GetValue()
-        self.NV["Value"] = v
+        self.PNV["Value"] = v
 
-        # ------------------------------------------------------
+        #################################################### STILL NEEDLE VALVE
 
         digitsc = imageCollect("digits", "yellow") 
 
         # create Still valve interface
-        self.SV = {}
+        self.SNV = {}
         # add interface element: name
-        self.SV["Name"] = "SV"
+        self.SNV["Name"] = "SV"
         # add interface element: all the wheels
-        self.SV["Wheels"] = []
+        self.SNV["Wheels"] = []
         for n, x, y in [
                 (100,  0+965, 294),
                 (10,  12+965, 294),
@@ -170,94 +171,66 @@ class myapp(app):
             # set the wheel position
             w.SetPosition((x, y))
             # bind wheel events to handler
-            w.BindEvent(self.SVOperate)
+            w.BindEvent(self.SNVOperate)
             # setup wheel configuration
             w.weight = n        # digit numerical weight
-            w.group = self.SV   # add wheel to still wheels group
+            w.group = self.SNV   # add wheel to still wheels group
             # add wheel to still interface
-            self.SV["Wheels"].append(w)
+            self.SNV["Wheels"].append(w)
         # add interface element: value
         v = 0
-        for w in self.SV["Wheels"]:
+        for w in self.SNV["Wheels"]:
             v += w.weight * w.GetValue()
-        self.SV["Value"] = v
+        self.SNV["Value"] = v
 
-        # ------------------------------------------------------
+        #################################################################### GN
 
-        # self.G1 = self.Gn(780, 80, "G1")
-        self.G1 = self.Gn(172, 437, "G1")
-        self.G2 = self.Gn(375, 698, "G2")
-        self.G3 = self.Gn(960, 698, "G3")
+        # load images
+        collection = imageCollect("digits", "red")
+        names = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."]
+        images = imageSelect(collection, names)
 
-        # test values
-        self.GnSet(self.G1, 123.5657)
-        self.GnSet(self.G2, 23.04)
-        self.GnSet(self.G3, 3.05)
-        # ------------------------------------------------------
+        self.Gn = {}
+        
+        for data in [
+                    (172, 437, "G1"),
+                    (375, 698, "G2"),
+                    (960, 698, "G3"),
+                ]:
+
+            x, y, name = data
+            g = digitalFixedPointDisplay(self.content, "05.1f", images, names)
+            g.SetPosition((x, y))
+            self.Gn[name] = g
+
+
+        self.Gn["G1"].SetValue(123.5657)
+        self.Gn["G2"].SetValue(23.04)
+        self.Gn["G3"].SetValue(3.05)
 
         # done
         return
 
-    def Gn(self, X, Y, name):
-        # load images
-        digitsc = imageCollect("digits", "red") 
-        digitsd = imageCollect("digits", "red", "dot")
-        # create interface
-        G = {}
-        # add interface element: name
-        G["Name"] = name
-        # add interface element: digits
-        G["Digits"] = []
-        for n, x, y in [
-                (100,  0 + X, Y),
-                (10,  12 + X, Y),
-                (1,   24 + X, Y),
-                (.1,  36 + X + 3, Y),
-            ]:
-            d = bitmapControl(
-                self.content,
-                imageSelect(digitsc, "normal"))
-            d.SetPosition((x, y))
-            d.group = G
-            G["Digits"].append(d)
-        # add interface element: dot
-        d = bitmapControl(self.content, digitsd)
-        d.SetPosition((36 + X, Y))
-        G["dot"] = d
-        # done, return interface reference
-        return G
-
-    def GnSet(self, g, value):
-        # get displays list
-        G = g["Digits"]
-        # get digits value
-        L = list(f"{value:05.1f}")
-        L.pop(3) # remove dot
-        # update display
-        for d, v in zip(G, L):                
-            d.SetValue(int(v))
-        return
-
-    def NVOperate(self, event):
+    def PNVOperate(self, event):
         # get reference to wheel button
         c = event.caller
         # get variation
         dv = c.step * c.weight
         # get target value
-        v = self.NV["Value"] + dv
+        v = self.PNV["Value"] + dv
         # coerce to limits
         if v < 0:   v = 0
         if v > 100: v = 100 
         # check if up-to-date 
-        if self.NV["Value"] == v:
+        if self.PNV["Value"] == v:
             c.Reset()
             return
         # update value
-        self.NV["Value"] = v
+        self.PNV["Value"] = v
         # convert to digits list
         s = list(f"{v:03}")
         # check for wheel updates
-        for w in self.NV["Wheels"]: # add zip
+        for w in self.PNV["Wheels"]: # add zip
             d = int(s.pop(0))
             if w.GetValue() == d:
                 continue
@@ -275,26 +248,26 @@ class myapp(app):
         # send command to serial port here
         return
 
-    def SVOperate(self, event):
+    def SNVOperate(self, event):
         # get reference to wheel button
         c = event.caller
         # get variation
         dv = c.step * c.weight
         # get target value
-        v = self.SV["Value"] + dv
+        v = self.SNV["Value"] + dv
         # coerce to limits
         if v < 0:   v = 0
         if v > 100: v = 100 
         # check if up-to-date 
-        if self.SV["Value"] == v:
+        if self.SNV["Value"] == v:
             c.Reset()
             return
         # update value
-        self.SV["Value"] = v
+        self.SNV["Value"] = v
         # convert to digits list
         s = list(f"{v:03}")
         # check for wheel updates
-        for w in self.SV["Wheels"]: # add zip
+        for w in self.SNV["Wheels"]: # add zip
             d = int(s.pop(0))
             if w.GetValue() == d:
                 continue
