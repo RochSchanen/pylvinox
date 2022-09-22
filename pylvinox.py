@@ -17,8 +17,10 @@ from pyvigi import version
 print(f"using pyvigi version {version}")
 
 from pyvigi.base import app
+
 from pyvigi.theme import imageCollect
 from pyvigi.theme import imageSelect
+
 from pyvigi.controls import vScroll
 
 from pyvigi.buttons import Switch
@@ -41,10 +43,10 @@ class myapp(app):
 
         # ------------------------------------------------------
 
-        # declare leds dictionary
+        # create leds dictionary
         self.leds = {}
         # get leds image collection
-        ledc = imageCollect("leds", "green")
+        LEDS = imageCollect("leds", "green")
         # create, place, bind and register led buttons
         for name, x, y in [
                 ("V1",   384, 222), ("V2",   498, 286),
@@ -59,7 +61,7 @@ class myapp(app):
                 ("V5A",  249, 544), ("V2A",  309, 544),
             ]:
             # create
-            l = Switch(self.content, imageSelect(ledc))
+            l = Switch(self.content, imageSelect(LEDS))
             # place
             l.SetPosition((x+23, y+50))
             # bind
@@ -71,37 +73,7 @@ class myapp(app):
 
         # ------------------------------------------------------
 
-        # declare leds dictionary
-        self.leds = {}
-        # get leds image collection
-        ledc = imageCollect("leds", "green")
-        # create, place, bind and register led buttons
-        for name, x, y in [
-                ("V1",   384, 222), ("V2",   498, 286),
-                ("V3",   612, 286), ("V4",   726, 286),
-                ("V5",   840, 286), ("V7",   498, 487),
-                ("V8",   612, 490), ("V10",  840, 490),
-                ("V9",   738, 637), ("V14",  678, 637),
-                ("V11A", 719, 718), ("V11B", 719, 869),
-                ("V12A", 398, 767), ("V12B", 398, 919),
-                ("V13A", 922, 767), ("V13B", 922, 919),
-                ("V1A",  197, 237), ("V4A",  182, 480),
-                ("V5A",  249, 544), ("V2A",  309, 544),
-            ]:
-            # create
-            l = Switch(self.content, imageSelect(ledc))
-            # place
-            l.SetPosition((x+23, y+50))
-            # bind
-            l.BindEvent(self.ValveOperate)
-            # config valve name
-            l.name = name
-            # register for external access (to explore)
-            self.leds[name] = l
-
-        # ------------------------------------------------------
-
-        # declare switches dictionary
+        # create switches dictionary
         self.switches = {}
         # get leds image collection
         switchc = imageCollect("switches", "blue")

@@ -44,10 +44,10 @@
 0, 0, 8, 8, 12, 20, 4, 8, red, normal, 8
 0, 0, 8, 8, 12, 20, 5, 8, red, normal, 9
 
-0, 0, 8, 8, 3, 20, 6, 1, yellow, normal, .
-0, 0, 8, 8, 3, 20, 6, 3, yellow, hover,  .
-0, 0, 8, 8, 3, 20, 6, 5, orange, normal, .
-0, 0, 8, 8, 3, 20, 6, 7, red,    normal, .
+0, 0, 8, 8, 12, 20, 6, 1, yellow, normal, .
+0, 0, 8, 8, 12, 20, 6, 3, yellow, hover,  .
+0, 0, 8, 8, 12, 20, 6, 5, orange, normal, .
+0, 0, 8, 8, 12, 20, 6, 7, red,    normal, .
 
 0, 0, 8, 8, 12, 20, 6, 8, void
 
